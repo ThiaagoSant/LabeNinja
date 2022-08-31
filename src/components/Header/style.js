@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderHome = styled.header`
-  height: 70px;
+  height: 80px;
   width: 100%;
   background-color: #313640;
   padding: 0 4%;
@@ -16,6 +16,7 @@ export const HeaderHome = styled.header`
   h1 a {
     color: white;
     font-family: Helvetica, sans-serif;
+    font-size: 2rem;
   }
 
   button {
@@ -25,6 +26,7 @@ export const HeaderHome = styled.header`
 
     a {
       color: white;
+      font-size: 1rem;
     }
   }
 `;
