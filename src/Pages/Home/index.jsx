@@ -1,30 +1,30 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
+
+import { Main, ContainerButton } from "./style";
+import bg from "../../assets/imgs/freelancer-peoples.jpg";
 
 const Home = () => {
   return (
-    <>
-      <header>
-        <h1>
-          Labe<span>Ninja</span>
-        </h1>
+    <Main>
+      <img src={bg} alt={"fundo"} />
 
-        <nav>
-          <button>
-            <Link to={"/cart"}>Carrinho</Link>
-          </button>
-        </nav>
-      </header>
-
-      <main>
+      <div>
         <p>
           Torne sua vida rápida e prática <span>como um ninja.</span>
+          <p>Encontre o melhor freelancer aqui!</p>
         </p>
-
-        <Link to={"/services"}>Contratar Serviço</Link>
-        <Link to={"/register"}>Registar Serviço</Link>
-      </main>
-    </>
+        <ContainerButton>
+          <Link to={"/services"}>
+            <button>Contratar Serviço</button>
+          </Link>
+          <Link to={"/register"}>
+            <button>Registar Serviço</button>
+          </Link>
+        </ContainerButton>
+      </div>
+    </Main>
   );
 };
 
