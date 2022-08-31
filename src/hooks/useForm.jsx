@@ -6,7 +6,7 @@ const useForm = (initialState) => {
   const onChange = (e) => {
     const { name, value } = e.target;
 
-    setForm((form) => ({ ...form, [name]: value }));
+    setForm((form) => ({ ...form, [name]: name === "price" ? +value : value }));
   };
 
   const cleanFields = () => {
@@ -20,4 +20,4 @@ const useForm = (initialState) => {
   };
 };
 
-export default useForm
+export default useForm;
